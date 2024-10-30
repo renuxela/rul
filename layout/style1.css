@@ -8,6 +8,32 @@ body {
     padding: 0;
 }
 
+#generalBox {
+    position: relative;
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 400;
+    margin-top: 90px;
+    line-height: 1.2;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 100;
+    position: absolute;
+    top: 233px;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.85); 
+    font-weight: 100;   
+    position: absolute;
+    top: 290px;
+    width: 250px;
+}
+
 #picture1 img {
     display: block;
     height: 120vh;
@@ -25,7 +51,9 @@ body {
 .button-container {
     display: flex;
     width: 400px;
-    margin-top: 464px;
+    top: 540px;
+    position: absolute;
+    
 }
 
 .button-container__left {
