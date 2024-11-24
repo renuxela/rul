@@ -21,7 +21,7 @@ h1 {
 
 h2 {
     color: rgba(255, 255, 255, 0.85);
-    font-weight: 100;
+    font-weight: 200;
     position: absolute;
     top: 233px;
 }
@@ -51,7 +51,7 @@ p {
 .button-container {
     display: flex;
     width: 400px;
-    top: 540px;
+    top: 530px;
     position: absolute;
     
 }

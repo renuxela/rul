@@ -1,0 +1,149 @@
+@import url("fonst.css");
+
+#firstpage {
+    height: 100vh;
+}
+
+body {
+    background-color: #1F527B;
+    font-family: 'Roca';    
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    color: rgba(255, 255, 255, 0.85);
+    justify-content: space-between;
+    width: 750px;
+    margin-left: 200px;
+    float: right;
+    margin-top: 29px;
+    margin-right: 150px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#logo img {
+    width: 120px;
+    margin-left: 15px;
+    margin-top: 10px;
+    float: left
+}
+
+.body1 {
+    clear: both;
+    width: 100%;
+    position: relative;
+    top: 12px;
+}
+
+.wall-background {
+    background-color: rgba(0, 151, 178, 0.3);
+    height: 212.5px;
+}
+
+.wall {
+    display: flex;
+    justify-content:space-around;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 230px;
+}    
+
+.tables {
+    width: 100%;
+    display: flex;
+}
+
+.table {
+    display: flex;
+    height: 100%;
+    align-items: end;
+}
+
+.black {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 90%;
+    align-items: center;
+}
+
+.black1 {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 80%;
+    align-items: center;
+}
+
+.black2 {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 80%;
+}
+
+.computer {
+    display: flex;
+    justify-content: center;
+    height: 192.5px;
+    aspect-ratio: 1/1;
+    background-color: rgba(216, 174, 94, 0.6);
+    border-width: 10px;
+    border-color: rgba(0, 0, 0, 0.8);
+    border-style: solid;
+    position: relative;
+}
+
+#secondComputer {
+    background-color: rgba(216, 174, 94, 0.8);
+}
+
+.keyboard {
+    position: absolute;
+    background-color: #9c9fa7;
+    height: 13.9px;
+    width: calc(212.5px * 0.6);
+    margin-left: calc(100% / 6 - 212.5px * 0.6 / 2);
+    bottom: calc(56.25% - 13.9px);
+}
+
+#circle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #1f527b;
+    border-radius: 50%;
+    position: absolute;
+    top: 77.5px;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 22.5px solid transparent;
+    border-right: 22.5px solid transparent;
+    border-bottom: 38.97px solid #0097b2;
+    transform: rotate(180deg);
+    position: relative;
+    top: 4px;
+}
+
+#Htopics {
+    font-size: 2.875rem;
+    font-weight: bold;
+    color: #0097b2;
+    position: absolute;
+    top: 5px;
+}
+
+#clickhere {
+    position: absolute;
+    font-size: 1.2375rem;
+    font-weight: 400;
+    bottom: 2px;
+}
+

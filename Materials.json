@@ -1,0 +1,63 @@
+{
+    "russianSections": {
+        "morphology": {},
+        "phonetics": {},
+        "morphemics": {
+            "independentParts": {
+                "noun": {
+                    "tests": [
+                        {
+                            "pages": [
+                                {
+                                    "task": "",
+                                    "answer": "",
+                                    "rule": ""
+                                },
+                                {
+                                    "task": "",
+                                    "answer": "",
+                                    "rule": ""
+                                },
+                                {
+                                    "task": "",
+                                    "answer": "",
+                                    "rule": ""
+                                },
+                                {
+                                    "task": "",
+                                    "answer": "",
+                                    "rule": ""
+                                },
+                                {
+                                    "task": "",
+                                    "answer": "",
+                                    "rule": ""
+                                }
+                            ]
+                        },
+                        {},
+                        {},
+                        {},
+                        {},
+                        {}
+                    ]
+                },
+                "adjective": {},
+                "numeral": {},
+                "pronoun": {},
+                "verb": {},
+                "adverb": {}
+            },
+            "auxiliaryParts": {
+                "preposition": {},
+                "conjunction": {},
+                "particle": {}
+            }
+        },
+        "wordFormation": {},
+        "lexicology": {},
+        "orthography": {},
+        "syntax": {},
+        "punctuation": {}
+    }
+}
