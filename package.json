@@ -1,0 +1,13 @@
+{
+  "name": "rul",
+  "version": "1.0.0",
+  "description": "Команды, связанные с настройкой удалённого репозитория, такие как git remote add или git push -u, не нужно вводить каждый раз при выполнении коммита. Давайте рассмотрим их более подробно и разберём, когда их использовать:",
+  "main": "",
+  "scripts": {
+    "start": "cd ./layout && live-server --port=5500",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

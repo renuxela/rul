@@ -1,0 +1,9 @@
+@import url("fonst.css");
+
+body {
+    background-color: darkslateblue;
+    font-family: 'Roca';    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
