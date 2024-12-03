@@ -14,7 +14,7 @@
 
         <header>
 
-            <div id="legend">Одушевлённость имён существительных</div>
+            <div id="legend">Одушевлённость&nbsp;&nbsp;имён&nbsp;&nbsp;существительных</div>
 
             <div class="Dots">
 
@@ -29,19 +29,69 @@
 
         <main>
 
-            <div id="question" class="field"></div>
+            <div id="question" class="field">
 
-            <div id="answer" class="field">
+                <div class="field__name">Задание</div>
+                <div class="field__block"><div class="field__block-text">Слово снеговик является одушевлённым или неодушевлённым? (В ответ запишите прилагательное в форме среднего рода с большой буквы)</div></div>
 
-                <label for="message">Введите ваше сообщение:</label><br>
-                <textarea id="message" name="message" placeholder="Напишите здесь..."></textarea><br>
-                <input type="submit" value="Отправить">
-                
             </div>
 
-            <div id="rule" class="field"></div>
+            <div id="answer" class="field">
+                
+                <div class="field__name">Ваш&nbsp;&nbsp;ответ</div>
+                <div class="field__block">
+                    <div class="input" id="editableInput" contenteditable="true" placeholder="Введите ваш ответ...">
+                        Введите ваш ответ...
+                    </div>
+                    <div class="ToF">Проверьте свои знания!</div>
+                    <div class="sendButton"><div class="sendButton__text">Проверить</div></div>
+                </div>
+
+            </div>
+
+            <div id="rule" class="field">
+
+                <div class="field__name">Подсказка</div>
+                <div class="field__block"><div class="field__block-text">Существительные, родительный и винительный падежи которых в форме множественного числа совпадают, являются одушевлёнными</div></div>
+
+            </div>
 
         </main>
+
+        <script>
+            // Получение элементов
+            const editableInput = document.getElementById('editableInput');
+            // Добавляем подсказку в качестве placeholder
+            editableInput.addEventListener('focus', () => {
+                if (editableInput.innerText === editableInput.getAttribute('placeholder')) {
+                    editableInput.innerText = '';
+                }
+            });
+            editableInput.addEventListener('blur', () => {
+                if (!editableInput.innerText.trim()) {
+                    editableInput.innerText = editableInput.getAttribute('placeholder');
+                }
+            });
+
+            // Максимальное количество символов
+            const maxLength = 100;
+
+            // Добавляем обработчик ввода текста
+            editableInput.addEventListener('input', () => {
+                // Если длина текста превышает допустимую
+                if (editableInput.innerText.length > maxLength) {
+                    // Обрезаем текст до допустимой длины
+                    editableInput.innerText = editableInput.innerText.slice(0, maxLength);
+                    // Перемещаем курсор в конец текста
+                    const range = document.createRange();
+                    const sel = window.getSelection();
+                    range.selectNodeContents(editableInput);
+                    range.collapse(false);
+                    sel.removeAllRanges();
+                    sel.addRange(range);
+                }
+            });
+        </script>
 
     </body>
 

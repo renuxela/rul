@@ -91,3 +91,73 @@ main {
     margin-left: 0;
     margin-right: 2.5%;
 }
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.field__name {
+    color: #d6b674;
+    font-size: 2rem;
+    margin-top: 3.8%;
+    font-weight: bold;
+}
+
+.field__block {
+    background-color: #d6b5740a;
+    width: 80%;
+    height: 70%;
+    margin-top: -20px;
+    border-radius: 15px;  
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    color: #d6b674;
+    text-align: left;
+}
+
+.input {
+    background-color: #d6b574cc;
+    width: 100%;
+    height: 65%;
+    border-radius: 15px;
+    padding-top: 3%;
+    text-align: left;
+    padding-left: 7%;
+    color: black;
+}
+
+.ToF {
+    margin-top: -4.75px;
+}
+
+.sendButton {
+    background-color: #d6b574cc;
+    width: 50%;
+    height: 10%;
+    border-radius: 8px;
+    text-align: center;
+    /*color: rgb(68, 52, 170);*/
+    color: black;
+    margin-right: 1.5%;
+}
+
+.sendButton__text {
+    padding-right: 1.5%;
+    margin-top: 1.5%;
+}
+
+.field__block-text {
+    width: 87.5%;
+    margin-top: 5%;
+}
+
+#editableInput:focus .placeholder,
+#editableInput.typing .placeholder {
+    visibility: hidden; /* Скрываем текст, когда ввод активен */
+    margin-left: 6%;
+    margin-top: 2%;
+}
