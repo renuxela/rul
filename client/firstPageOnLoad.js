@@ -2,7 +2,7 @@ async function firstPageOnLoad() {
 
     try {
 
-        const response = fetch('/api/firstPageOnLoad');
+        const response = await fetch('/api/firstPageOnLoad');
         if (!response.ok) {
             throw new Error('Ошибка загрузки данных');
         }
