@@ -9,8 +9,8 @@ async function firstPageOnLoad() {
 
         const jsonData = await response.json();
 
-        document.getElementsByClassName('field__block-text')[0].textContent = jsonData.question_text;
-        document.getElementsByClassName('field__block-text')[1].textContent = jsonData.rule_text;
+        document.getElementsByClassName('field__block-text')[0].innerHTML = jsonData.task;
+        document.getElementsByClassName('field__block-text')[1].innerHTML = jsonData.rule;
 
 
     } catch(error) {

@@ -1,6 +1,5 @@
 const fs = require('fs/promises');
 const path = require("path");
-const fileName = 'Materials.json';
 
 async function readJSON(fileName) {
 
@@ -19,16 +18,9 @@ async function readJSON(fileName) {
 }
 
 async function initialization(fileName) {
-    const jsonData = await readJSON(fileName); 
-    nounTests = jsonData.russianSections.morphology.independentParts.noun.tests;   
+    const jsonData = await readJSON(fileName);
+    return jsonData; 
+    //return jsonData.russianSections.morphology.independentParts.noun.tests;   
 }
 
-let nounTests;
-const initPromise = initialization(fileName); 
-
-module.exports = {
-    getNounTest: async () => {
-        await initPromise;
-        return nounTests;
-    }
-};
+module.exports = initialization;
