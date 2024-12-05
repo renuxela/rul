@@ -120,7 +120,7 @@ function addNounClickHandler() {
     const noun = document.getElementById("noun");
     if (noun) { // Проверяем, существует ли элемент
         noun.onclick = function () {
-            window.location.href = "nounTasks.html";
+            window.location.href = "../noun/nounTasksFiles/nounTasks.html";
         };
     }
 }
