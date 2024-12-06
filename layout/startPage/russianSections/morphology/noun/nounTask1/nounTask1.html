@@ -58,42 +58,8 @@
 
         </main>
 
-        <script>
-            // Получение элементов
-            const editableInput = document.getElementById('editableInput');
-            // Добавляем подсказку в качестве placeholder
-            editableInput.addEventListener('focus', () => {
-                if (editableInput.innerText === editableInput.getAttribute('placeholder')) {
-                    editableInput.innerText = '';
-                }
-            });
-            editableInput.addEventListener('blur', () => {
-                if (!editableInput.innerText.trim()) {
-                    editableInput.innerText = editableInput.getAttribute('placeholder');
-                }
-            });
-
-            // Максимальное количество символов
-            const maxLength = 100;
-
-            // Добавляем обработчик ввода текста
-            editableInput.addEventListener('input', () => {
-                // Если длина текста превышает допустимую
-                if (editableInput.innerText.length > maxLength) {
-                    // Обрезаем текст до допустимой длины
-                    editableInput.innerText = editableInput.innerText.slice(0, maxLength);
-                    // Перемещаем курсор в конец текста
-                    const range = document.createRange();
-                    const sel = window.getSelection();
-                    range.selectNodeContents(editableInput);
-                    range.collapse(false);
-                    sel.removeAllRanges();
-                    sel.addRange(range);
-                }
-            });
-        </script>
-
         <script src="/firstPageOnLoad.js"></script>
+        <script src="/checkButtonClick.js"></script>
 
     </body>
 
