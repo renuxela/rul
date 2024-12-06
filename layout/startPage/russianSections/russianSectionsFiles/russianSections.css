@@ -157,6 +157,7 @@ body {
     display: flex;
     align-items: start;
     justify-content: center;
+    margin-top: 1%;
 }
 
 .header2 {
@@ -212,7 +213,7 @@ body {
     height: 490px;
     position: absolute;
     left: 50%;
-    top: calc(101% + 85px);
+    top: calc(101% + 95px);
     transform: translate(-50%);
     border-radius: 25px;
 }
@@ -257,6 +258,17 @@ body {
 }
 
 .play {
+    width: 0;
+    height: 0;
+    border-left: 10.8px solid transparent;
+    border-right: 10.8px solid transparent;
+    border-bottom: 18.7px solid rgba(255, 255, 255, 0.25);
+    transform: rotate(90deg);    
+    position: relative;
+    left: 2px;
+}
+
+.readyPlay {
     width: 0;
     height: 0;
     border-left: 10.8px solid transparent;

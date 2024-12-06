@@ -6,3 +6,12 @@ circle1.onclick = function() {
         behavior: 'smooth' 
     });
 }
+
+const Dots = document.getElementsByClassName('Dots')[0];
+
+Dots.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
